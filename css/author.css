@@ -1,0 +1,66 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
+    margin: 0px 90px;
+    background-image: url("../css/Background.png");
+}
+
+h1 {
+    text-shadow: 3px 1px 0px #a4a4ba;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+h3,
+h2 {
+    text-shadow: 2px 1px 0px #a4a4ba;
+}
+
+.container {
+    background-color: #fff;
+    order:1;
+}
+
+main {
+    padding: 5px 50px;
+}
+
+.thumbnail {
+    padding: 15px;
+    font-size: 15px;
+    opacity:1;
+}
+
+#main-text {
+    margin-top: -30px;
+}
+/*BOOK KISMI BAŞLIYOR*/
+.cont {
+    background: #eee;
+    margin: 30px 30px 30px 30px;
+    padding: 20px;
+    outline: 5px solid #ccc;
+}
+p {
+    margin-bottom: 0.8em;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    margin: 10px;
+    border-color: black;
+    border-style: solid;
+}
+.img{
+    border-radius: 8px;
+    width:50%;
+    height: 50%;
+    opacity:1;
+}

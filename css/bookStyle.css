@@ -1,0 +1,215 @@
+
+h1 {
+    font-size: 3em;
+    text-align: right;
+    order: 2;
+    padding-bottom: 2em;
+    padding-left: 2em;
+}
+
+h1 small {
+    display: block;
+    width: 600px;
+}
+
+.site {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: center;
+    justify-content: center;
+    border-color: rgb(78, 19, 19);
+    border-style: solid;
+}
+
+h1 smaller {
+    display: block;
+    width: 600px;
+    font-size: 20px;
+}
+
+/*COMMENT SECTION*/
+/* .comSec {
+    border-color: #111;
+    border-style: solid;
+} */
+
+.tip-left {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background: transparent;
+    border: 10px solid #ccc;
+    top: 10px;
+    left: -25px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.dialogbox .body {
+    position: relative;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #dadada;
+    border-radius: 3px;
+    border: 5px solid #ccc;
+}
+
+.body .message {
+    min-height: 30px;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #797979;
+}
+
+.rev-button {
+    background-color: #f62;
+}
+
+body {
+    margin: auto;
+    font-family: "Lucida Grande";
+    font-size: 1em;
+    background-color: Snow;
+}
+
+
+.comment-row {
+    margin: auto;
+    display: block;
+    clear: both;
+    border-top: 1px solid LightGrey;
+    margin-bottom: 80px;
+}
+
+.comment-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form[class="comment-box"] {
+    box-sizing: border-box;
+    position: relative;
+    width: 30%;
+    display: inline;
+    margin-left: 15%;
+    float: left;
+    padding: 1em;
+}
+
+textarea,
+input[name="rev"] {
+    box-sizing: border-box;
+    width: 96%;
+    font-size: 1em;
+    display: inline;
+    float: left;
+    clear: left;
+    padding: 0.5em;
+    font-size: 1em;
+    outline: none;
+    color: DimGrey;
+    border: 1px dashed LightGrey;
+
+}
+
+textarea {
+    resize: none;
+}
+
+input[name="comment"] {
+    height: 4em;
+}
+
+#comment-button{
+    margin: auto;
+    background-color: #f4511e;
+    color: GhostWhite;
+    display: inline;
+    float: left;
+    clear: both;
+    padding: 0.5em;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+#comment-button:hover{
+    background-color: #f87952;
+    color: White;
+    cursor: pointer;
+}
+
+ul[class="comments-list"] {
+    position: relative;
+    box-sizing: border-box;
+    display: inline;
+    float: left;
+    width: 50%;
+    margin-top: 1em;
+    padding: 0 10% 0 0;
+}
+
+.comments-list li[class="comment"] {
+    box-sizing: border-box;
+    background-color: GhostWhite;
+    color: black;
+    box-shadow: 0 0 2px Grey;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-left: 1px solid #f4511e;
+}
+
+.comments-list li[class="comment"] p {
+    white-space: pre-line;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.comment .user {
+    font-weight: 900;
+    color: rgb(216, 145, 53);
+}
+
+.comments-list li[class="comment"]:last-child {
+    margin-bottom: 0;
+}
+
+/*STAR BURADAN BAŞLIYOR*/
+.rating {
+    float:left;
+}
+.rating span { float:right; position:relative; }
+.rating span input {
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+.rating span label {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    text-align:center;
+    color:#FFF;
+    background:#ccc;
+    font-size:30px;
+    margin-right:2px;
+    line-height:30px;
+    border-radius:50%;
+}
+.rating span:hover ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+    background: #f4511e;
+    color:#FFF;
+}
